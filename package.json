@@ -1,0 +1,26 @@
+{
+  "name": "package.json",
+  "version": "1.13.0",
+  "description": "My Nft",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayseozacar/nft-preview-card-component-main.git"
+  },
+  "author": "ayseozacar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayseozacar/nft-preview-card-component-main/issues"
+  },
+  "homepage": "https://github.com/ayseozacar/nft-preview-card-component-main#readme",
+  "dependencies": {
+    "next.js": "^1.0.3",
+    "package.json": "^2.0.1",
+    "pkg": "^5.5.1",
+    "prettier": "^2.5.1",
+    "react": "^17.0.2"
+  }
+}
