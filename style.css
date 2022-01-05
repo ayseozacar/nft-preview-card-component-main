@@ -17,38 +17,41 @@
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 html {
     font-family: "Outfit", sans-serif;
+    background: var(--light-oxford-blue);
+    height: 100%;
 }
 
 a {
     text-decoration: none;
 }
 
-.body {
-    background: var(--oxford-blue);
-    min-height: 100vh;
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    height: 100%;
 }
 
 /*-----------------------------------*\
   #Card
 \*-----------------------------------*/
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .card {
     background: var(--light-oxford-blue);
     max-width: 350px;
     padding: 24px;
     border-radius: 15px;
-    box-shadow: 0px 20px 25px 15px rgba(0, 0, 0, 0.05),
-    0px 40px 30px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 25px 15px rgba(0, 0, 0, 0.05),
+    0 40px 30px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card_product_img {
@@ -76,16 +79,22 @@ a {
     opacity: 1;
 }
 
-
 .card_product_img img {
     width: 100%;
     display: block;
 }
 
 .card_body {
-    padding: 23px 0;
-    border-bottom: 1px solid var(--indigo-dye);
-    margin-bottom: 15px;
+    padding-top: 30px;
+}
+
+hr {
+    border-color: var(--blue-yonder);
+    margin-top: 45px;
+}
+
+b {
+    color: transparent;
 }
 
 .card_title {
@@ -117,9 +126,11 @@ a {
     display: flex;
     align-items: center;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .card_price {
+    white-space: nowrap;
     color: var(--aqua);
 }
 
@@ -131,16 +142,26 @@ a {
     color: var(--blue-yonder);
 }
 
-
 .card_footer {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    padding-top: 25px;
 }
+
+.card_image {
+    height: 50px;
+    width: 50px;
+}
+
 
 .card_author_name {
     color: var(--blue-yonder);
     font-weight: 500;
+    display: inline-flex;
+    text-align: center;
+    min-inline-size: fit-content;
+    margin-left: 10px;
 }
 
 .card_author_name a {
@@ -156,6 +177,10 @@ a {
     text-align: center;
     font-size: 11px;
     position: absolute;
-    bottom: 594px;
+    bottom: 264px;
+    color: var(--blue-yonder);
 }
 
+.attribution a {
+    color: var(--indigo-dye);
+}
